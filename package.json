@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/EnigmaBridge/client.js-SoftHSMv1/issues"
   },
-  "main": "./lib/enigma.js",
+  "main": "./lib/ebsoft1.js",
   "bin": {
     "ebsoft1": "./bin/ebsoft1.js"
   },
