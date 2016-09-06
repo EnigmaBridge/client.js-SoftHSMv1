@@ -1,0 +1,4 @@
+tmp/
+.htaccess
+.idea
+npm-debug.log

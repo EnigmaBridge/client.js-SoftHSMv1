@@ -1,0 +1,8 @@
+.idea
+node_modules
+.htaccess
+/dist
+/tmp
+/lib/built/sjcl/*.js
+/lib/built/sjcl/*.map
+npm-debug.log

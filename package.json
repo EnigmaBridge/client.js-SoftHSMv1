@@ -1,0 +1,75 @@
+{
+  "name": "ebclient-SoftHSMv1",
+  "version": "0.0.1",
+  "author": {
+    "name": "Dusan Klinec",
+    "email": "dusan@enigmabridge.com",
+    "url": "https://enigmabridge.com/"
+  },
+  "description": "EnigmaBridge utilities for SoftHSMv1",
+  "keywords": [
+    "encryption",
+    "HSM",
+    "middleware",
+    "softhsm",
+    "enigmabridge"
+  ],
+  "homepage": "https://github.com/EnigmaBridge/client.js-SoftHSMv1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EnigmaBridge/client.js-SoftHSMv1.git"
+  },
+  "contributors": [
+    {
+      "name": "Dusan Klinec",
+      "email": "dusan@enigmabridge.com",
+      "url": "https://enigmabridge.com/"
+    },
+    {
+      "name": "Dan Cvrcek",
+      "email": "dan@enigmabridge.com",
+      "url": "https://enigmabridge.com/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnigmaBridge/client.js-SoftHSMv1/issues"
+  },
+  "main": "./lib/enigma.js",
+  "bin": {
+    "ebsoft1": "./bin/ebsoft1.js"
+  },
+  "dependencies": {
+    "ebclient.js": "^0.1.9",
+    "bluebird": "^3.4.6",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.21.2",
+    "jshint": "latest",
+    "watch": "latest",
+    "mocha": "latest",
+    "chai": "latest",
+    "rimraf": "latest",
+    "shelljs": "^0.7.4"
+  },
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean -s",
+    "postbuild": "npm run test",
+    "build": "build/build.js",
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "./node_modules/eslint/bin/eslint.js lib test",
+    "prepublish": "npm run build"
+  },
+  "_npmUser": {
+    "name": "ph4r05",
+    "email": "dusan.klinec@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "ph4r05",
+      "email": "ph4r05@gmail.com"
+    }
+  ]
+}
